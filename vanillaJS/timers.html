@@ -1,0 +1,40 @@
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+<button id="btn_start_stop" onclick="callTimer()">Start Timer</button>
+<button id="btn_restart"  onclick="restartTimer()">Restart Timer</button>
+<div id="demo"></div>
+
+<script type="text/javascript">
+
+var timerInterval; // say, to store the timer object
+var timerStarted = false;
+
+function callTimer(){
+	if(timerStarted === false){
+		timerStarted = true;
+		timerInterval = setInterval(startTimer, 1000);
+		document.getElementById('btn_start_stop').innerHTML= "Stop Timer";
+		
+	} else {
+		timerStarted = true;
+		clearInterval(timerInterval);
+		document.getElementById('btn_start_stop').innerHTML= "Start Timer";
+	}
+}
+
+function restartTimer(){
+	if(timerStarted === true){
+		clearInterval(timerInterval);
+		timerInterval = setInterval(startTimer, 1000);
+	}
+}
+
+function startTimer(){
+
+	var date = Date();
+
+	document.getElementById('demo').innerHTML= date;
+	console.log("[startTimer] time updated at " +  date);
+}
+
+</script>
