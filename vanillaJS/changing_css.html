@@ -7,11 +7,16 @@
 </head>
 <body>
 
-<p id="p2">Hello World!</p>
+<p id="p2" onclick="changeColor()">Hello World!</p>
 
 <script>
-document.getElementById("p2").style.color = "white";
-document.getElementById("p2").style.background = "#f34";
+// document.getElementById("p2").style.color = "white";
+// document.getElementById("p2").style.background = "rgba(255,0,0,0.4)";
+
+function changeColor(){
+	document.getElementById("p2").style.color = "white";
+	document.getElementById("p2").style.background = "rgba(255,0,0,0.4)";
+}
 </script>
 
 <p>The paragraph above was changed by a script.</p>

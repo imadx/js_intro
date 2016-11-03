@@ -4,15 +4,49 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script src="src/jquery-3.1.1.js"></script>
+	<script src="basic_function.js"></script>
 </head>
 <body>
 
 <h1>My First JavaScript</h1>
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
+<button id="update_button" type="button"
+onclick="updateDate()">
 Click me to display Date and Time.</button>
 
-<p id="demo"></p>
+<p id="demo" color="red">Test Text</p>
+
+<p class="test_paragraph">Test Paragraph</p>
+<p class="test_paragraph">Test Paragraph</p>
+<p id="special" class="test_paragraph">Special</p>
+<p class="test_paragraph">Test Paragraph</p>
+<p class="test_paragraph">Test Paragraph</p>
+<p class="test_paragraph_1">Test Paragraph</p>
+<p class="test_paragraph_1">Test Paragraph</p>
+<p class="test_paragraph_1">Test Paragraph</p>
+<p class="test_paragraph_1">Test Paragraph</p>
+<p class="test_paragraph_1">Test Paragraph</p>
+<div class="test_paragraph_1">Test Paragraph</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		alert("asdf");
+		console.log("page loaded..")
+	} );
+	$(window).resize(function(){
+		console.log("window resized...")
+	});
+
+	$("#special").click(function(){
+		$(this).css("font-size", "24px");
+	})
+	$("p.test_paragraph_1").click(function(){
+		$(this).hide(100);
+	})
+	$("div.test_paragraph_1.active").click(function(){
+		$(this).hide(3000);
+	})
+</script>
 
 </body>
 </html>
