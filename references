@@ -10,3 +10,6 @@ false == null      // false
 null == undefined  // true
 
 ' \t\r\n ' == 0    // true
+
+npm config set proxy http://cachex.pdn.ac.lk:3128
+npm config set https-proxy http://cachex.pdn.ac.lk:3128

@@ -1,14 +1,15 @@
 checklist
 
-vanillajs ( pure JS )
+vanillajs ( pure JS ) - https://github.com/imadx/js_intro
 
 events 			- http://www.w3schools.com/js/js_events.asp
 functions		- http://www.w3schools.com/js/js_functions.asp
 dom manipulation
 
 chrome console
-jquery
+jquery			- http://www.w3schools.com/jquery/jquery_examples.asp
 
 nodejs			- https://nodejs.org/en/download/
 
 js is bad 		- http://archive.oreilly.com/pub/a/javascript/excerpts/javascript-good-parts/bad-parts.html
+
